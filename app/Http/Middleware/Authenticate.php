@@ -12,8 +12,8 @@ class Authenticate extends Middleware
      * @param  \Illuminate\Http\Request  $request
      * @return string|null
      */
-   protected function redirectTo(Request $request): ?string
-{
-    return $request->expectsJson() ? null : null;
-}
+    protected function redirectTo($request): ?string
+    {
+        return $request->expectsJson() ? null : null;
+    }
 }
